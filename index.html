@@ -173,16 +173,7 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; border-r
   column-gap: clamp(24px, 3.4vw, 52px);
 }
 .entry-header--full { grid-template-columns: minmax(0, 1fr); }
-.entry .draft-note {
-  margin: 8px 0 0;
-  color: var(--muted);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: .035em;
-  line-height: 1.5;
-}
+
 .entry-info { min-width: 0; }
 /* Consistent title sizing for JMP, working papers, and work in progress. */
 .entry h2 {
@@ -476,11 +467,17 @@ a:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; border-r
         <div class="rule" aria-hidden="true"></div>
       </div>
       <article class="entry">
-        <div class="entry-header entry-header--full">
+        <div class="entry-header">
           <div class="entry-info">
             <h2>Robust Alignment of Incentives</h2>
-            <p class="draft-note">Draft coming soon.</p>
           </div>
+          <div class="paper-actions">
+            <a class="paper-action" href="https://andreadigiovanpaolo.github.io/files/robust_alignment.pdf" target="_blank" rel="noopener noreferrer">Paper <svg class="external-link-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M3 9 L9 3 M4 3 H9 V8" stroke="currentColor" stroke-width="1.1" stroke-linecap="square" stroke-linejoin="miter"/></svg></a>
+            <button class="paper-action abstract-button" type="button" aria-expanded="false" aria-controls="abstract-robust-alignment">Abstract <span class="toggle-mark" aria-hidden="true">+</span></button>
+          </div>
+        </div>
+        <div class="abstract-panel" id="abstract-robust-alignment" hidden>
+          <p>I study robust regulation of a better-informed agent whose incentives are imperfectly aligned with the principal’s. The principal faces ambiguity about both the consequences of the agent’s actions and his private bias, but knows that small changes in the action cannot have arbitrarily large payoff consequences. She may impose action-contingent penalties or restrict the set of actions available to the agent. I characterize corrective interventions that minimize worst-case regret. Their form depends on the principal’s information about the agent’s bias. If she can bound its overall magnitude but not its local variation, the optimal intervention is a staircase tax. If she instead knows bounds on the marginal bias, it is a kinked piecewise-linear tax.</p>
         </div>
       </article>
     </section>
